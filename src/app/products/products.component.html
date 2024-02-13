@@ -1,0 +1,12 @@
+<a routerLink="/">Home</a>
+
+<div class="product-container">
+  @for (product of products; track $index) {
+    <div class="product">
+      <p>Title : {{ product.title }}</p>
+      <p>Id : {{ product._id }}</p>
+      <p>Brand: {{ product.brand }}</p>
+      <a [routerLink]="['/product-detail', product._id]">View Details</a>
+    </div>
+  }
+</div>

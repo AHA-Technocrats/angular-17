@@ -1,0 +1,22 @@
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.product {
+  border: 1px solid #ccc; /* Optional: Add border for better visualization */
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
